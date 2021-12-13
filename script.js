@@ -30,7 +30,8 @@ function calculateHTML() {
 	let final = parseFloat(calculate(params).toFixed(2));
 
 	document.querySelector("#output").innerHTML =
-		`You must get at least <b>${final}%</b> to reach the ${params.target}% goal.`
+		`You must get at least <b>${final}%</b> on the ` +
+		`Final Exam to reach the ${params.target}% goal.`
 }
 
 // const final = calculate({
